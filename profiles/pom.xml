@@ -20,9 +20,8 @@
   </properties>
   <profiles>
 		<profile>
-			<id>default</id>
+			<id>other</id>
 			<activation>
-				<activeByDefault>true</activeByDefault>
 				<property>
           <name>!debug</name>
         </property>
@@ -36,8 +35,9 @@
       </dependencies>
 		</profile>
     <profile>
-			<id>other</id>
+			<id>default</id>
 			<activation>
+      <activeByDefault>true</activeByDefault>
 				<property>
           <name>debug</name>
           <value>true</value>
@@ -64,11 +64,6 @@
   </profiles>
 
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-    </dependency>
   </dependencies>
 
   <build>

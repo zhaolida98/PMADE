@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
-  <parent>
-    <artifactId>aggregate-parent</artifactId>
-    <groupId>com.sca.benchmark</groupId>
-    <version>1.0-SNAPSHOT</version>
-    <relativePath>aggregate-parent/pom.xml</relativePath>
-  </parent>
-
   <groupId>com.sca.benchmark</groupId>
   <artifactId>aggregate</artifactId>
   <version>1.0-SNAPSHOT</version>
@@ -26,11 +18,16 @@
   </properties>
 
   <dependencies>
+  <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>2.17.1</version>
+    </dependency>
     <dependency>
-        <groupId>org.apache.logging.log4j</groupId>
-        <artifactId>log4j-api</artifactId>
-        <version>2.17.1</version>
-    </dependency>  
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-api</artifactId>
+      <version>2.17.1</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -87,7 +84,5 @@
   </reporting>
 <modules>  
     <module>aggregate-child1</module>
-    <module>aggregate-child2</module>
-    <module>aggregate-parent</module>
   </modules>
 </project>

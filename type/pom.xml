@@ -74,10 +74,13 @@
     </plugins>
   </reporting>
 <modules>  
-  <module>type-batch</module>
   <module>type-ejb</module>
   <module>type-war</module>
   <module>type-rar</module>
-    <module>type-ear</module>
+  <module>type-ear</module>
+  <module>type-javadoc</module>
+  <module>type-pom</module>
+  <module>type-test-jar</module>
+    <module>type-jar</module>
   </modules>
 </project>

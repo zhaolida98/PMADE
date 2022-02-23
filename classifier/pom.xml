@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.sca.benchmark</groupId>
   <artifactId>classifier</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
 
   <name>classifier</name>
   <description>A simple classifier.</description>
@@ -20,31 +19,6 @@
   </properties>
 
   <dependencies>
-  <dependency>
-    <groupId>org.jboss.jbossas</groupId>
-    <artifactId>jboss-as-security</artifactId>
-    <version>5.1.0.CR1</version>
-    <classifier>client</classifier>
-  </dependency>
-  <dependency>
-    <groupId>org.apache.kafka</groupId>
-    <artifactId>kafka-clients</artifactId>
-    <version>1.0.0</version>
-    <classifier>test</classifier>
-  </dependency>
-  <dependency>
-    <groupId>net.sf.json-lib</groupId>
-    <artifactId>json-lib</artifactId>
-    <version>2.4</version>
-    <classifier>jdk15</classifier>
-  </dependency>
-  <dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-log4j2</artifactId>
-    <version>2.6.1</version>
-    <classifier>javadoc</classifier>
-  </dependency>
-  <!-- no classifier source is found -->
   </dependencies>
 
   <build>
@@ -98,4 +72,10 @@
       </plugin>
     </plugins>
   </reporting>
+<modules>  
+    <module>classifier-client</module>
+    <module>classifier-test</module>
+    <module>classifier-javadoc</module>
+    <module>classifier-others</module>
+  </modules>
 </project>
