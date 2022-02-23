@@ -20,7 +20,7 @@
   </properties>
   <profiles>
 		<profile>
-			<id>default</id>
+			<id>other</id>
 			<activation>
 				<activeByDefault>true</activeByDefault>
 				<property>
@@ -36,7 +36,7 @@
       </dependencies>
 		</profile>
     <profile>
-			<id>other</id>
+			<id>default</id>
 			<activation>
 				<property>
           <name>debug</name>
